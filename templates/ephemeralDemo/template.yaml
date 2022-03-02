@@ -1,5 +1,4 @@
 version: 1
-  type: pipeline-template
-
-  name: Ephemeral Demo
-  description: use ephemeral agents
+type: pipeline-template
+name: Ephemeral Demo
+description: use ephemeral agents
