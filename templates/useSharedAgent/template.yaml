@@ -1,0 +1,5 @@
+version: 1
+  type: pipeline-template
+
+  name: use Shared Agent
+  description: Pipeline using a shared agent
