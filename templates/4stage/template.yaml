@@ -1,0 +1,4 @@
+version: 1
+type: pipeline-template
+name: 4 stage pipeline
+description: Pipeline with 4 stages
