@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         node {
-          label 'default'
+          label 'sharedAgent'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Dev') {
       agent {
         node {
-          label 'default'
+          label 'sharedAgent'
         }
 
       }
@@ -26,7 +26,7 @@ pipeline {
     stage('Test') {
       agent {
         node {
-          label 'default'
+          label 'sharedAgent'
         }
 
       }
@@ -37,7 +37,7 @@ pipeline {
     stage('Prod') {
       agent {
         node {
-          label 'default'
+          label 'sharedAgent'
         }
 
       }
