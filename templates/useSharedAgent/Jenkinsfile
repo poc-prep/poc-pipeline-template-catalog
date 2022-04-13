@@ -1,46 +1,26 @@
 pipeline {
-  agent none
+  agent sharedAgent
   stages {
     stage('Build') {
-      agent {
-        node {
-          label 'sharedAgent'
-        }
-
-      }
+      
       steps {
         echo 'Build Stage'
       }
     }
     stage('Dev') {
-      agent {
-        node {
-          label 'sharedAgent'
-        }
-
-      }
+      
       steps {
         echo 'Dev Stage'
       }
     }
     stage('Test') {
-      agent {
-        node {
-          label 'sharedAgent'
-        }
-
-      }
+     
       steps {
         echo 'Test Stage'
       }
     }
     stage('Prod') {
-      agent {
-        node {
-          label 'sharedAgent'
-        }
-
-      }
+      
       steps {
         echo 'Prod Stage'
       }
