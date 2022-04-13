@@ -1,5 +1,7 @@
 pipeline {
-  agent sharedAgent
+  agent {
+    label 'sharedAgent'
+  }
   stages {
     stage('Build') {
       
