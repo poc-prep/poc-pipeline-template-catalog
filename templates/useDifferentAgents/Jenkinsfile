@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         node {
-          label 'default'
+          label 'maven'
         }
 
       }
@@ -15,7 +15,7 @@ pipeline {
     stage('Dev') {
       agent {
         node {
-          label 'default'
+          label 'nodejs-app'
         }
 
       }
