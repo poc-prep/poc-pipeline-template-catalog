@@ -1,0 +1,4 @@
+version: 1
+type: pipeline-template
+name: useDifferentAgents
+description: Pipeline using different agents
