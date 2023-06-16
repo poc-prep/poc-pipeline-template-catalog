@@ -26,7 +26,7 @@ pipeline {
     stage('Test') {
       agent {
         node {
-          label 'default'
+          label 'nodejs-app'
         }
 
       }
@@ -37,7 +37,7 @@ pipeline {
     stage('Prod') {
       agent {
         node {
-          label 'default'
+          label 'nodejs-app'
         }
 
       }
