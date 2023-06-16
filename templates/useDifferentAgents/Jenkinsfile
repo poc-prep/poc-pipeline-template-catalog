@@ -26,7 +26,7 @@ pipeline {
     stage('Test') {
       agent {
         node {
-          label 'nodejs-app'
+          label 'python'
         }
 
       }
