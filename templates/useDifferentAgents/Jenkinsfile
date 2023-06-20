@@ -1,7 +1,7 @@
 pipeline {
   agent none
   stages {
-    stage('Build') {
+    stage('maven') {
       agent {
         node {
           label 'maven'
@@ -9,10 +9,10 @@ pipeline {
 
       }
       steps {
-        echo 'Build Stage'
+        echo 'maven Stage'
       }
     }
-    stage('Dev') {
+    stage('nodejs') {
       agent {
         node {
           label 'nodejs-app'
@@ -20,10 +20,10 @@ pipeline {
 
       }
       steps {
-        echo 'Dev Stage'
+        echo 'nodejs Stage'
       }
     }
-    stage('Test') {
+    stage('python') {
       agent {
         node {
           label 'python'
@@ -31,10 +31,10 @@ pipeline {
 
       }
       steps {
-        echo 'Test Stage'
+        echo 'python Stage'
       }
     }
-    stage('Prod') {
+    stage('gradle') {
       agent {
         node {
           label 'gradle'
@@ -42,7 +42,18 @@ pipeline {
 
       }
       steps {
-        echo 'Prod Stage'
+        echo 'gradle Stage'
+      }
+    }
+    stage('dotnet') {
+      agent {
+        node {
+          label 'dotnet'
+        }
+
+      }
+      steps {
+        echo 'dotnet Stage'
       }
     }
   }
