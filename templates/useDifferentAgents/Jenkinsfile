@@ -53,8 +53,11 @@ pipeline {
 
       }
       steps {
-        echo 'dotnet Stage'
-      }
+        container('dotnet') {
+            sh 'dotnet --version'
+            echo 'dotnet Stage'
+        }
+    }
     }
   }
 }
