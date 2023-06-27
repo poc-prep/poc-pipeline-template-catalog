@@ -1,4 +1,4 @@
 version: 1
 type: pipeline-template
-name: useWindowsAgent
+name: useWindowsAgents
 description: Pipeline using a Windows agent
