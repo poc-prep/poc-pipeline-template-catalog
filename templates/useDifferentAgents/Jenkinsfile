@@ -9,7 +9,10 @@ pipeline {
 
       }
       steps {
+        container('maven') {
+        sh 'mvn -v'
         echo 'maven Stage'
+        }
       }
     }
     stage('nodejs') {
@@ -20,7 +23,10 @@ pipeline {
 
       }
       steps {
+        container('nodejs') {
+        sh 'node --version'
         echo 'nodejs Stage'
+        }
       }
     }
     stage('python') {
@@ -31,7 +37,10 @@ pipeline {
 
       }
       steps {
+        container('python') {
+        sh 'python --version'
         echo 'python Stage'
+        }
       }
     }
     stage('gradle') {
@@ -42,7 +51,10 @@ pipeline {
 
       }
       steps {
-        echo 'gradle Stage'
+        container('gradle') {
+          sh 'gradle --version'
+          echo 'gradle Stage'
+        }
       }
     }
     stage('dotnet') {
