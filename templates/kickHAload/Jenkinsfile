@@ -1,0 +1,22 @@
+pipeline {
+  agent {
+    kubernetes {
+      yaml """
+apiVersion: v1
+kind: Pod
+spec:
+  containers:
+  - name: alpine
+    image: alpine
+    tty: true
+"""
+    }
+  }
+  stages {
+    stage('Trigger Load') {
+      steps {
+        publishEvent(event:jsonEvent('{"eventName":"triggerLoad"}'),verbose:true)
+      }
+    }
+  }
+}
