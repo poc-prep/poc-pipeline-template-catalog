@@ -1,0 +1,4 @@
+version: 1
+type: pipeline-template
+name: kickHSload
+description: Pipeline job to start 50 jobs
