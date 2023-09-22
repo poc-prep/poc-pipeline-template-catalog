@@ -1,4 +1,4 @@
 name: cw-catalog
 displayName: CloudBees Pipeline Template Catalog
-version: 2
+version: 1
 type: pipeline-template-catalog
