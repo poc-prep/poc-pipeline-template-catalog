@@ -1,4 +1,0 @@
-version: 1
-type: pipeline-template
-name: kickHAjob
-description: Pipeline job to show HA
