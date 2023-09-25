@@ -1,1 +1,37 @@
-
+pipeline {
+  agent {
+    node {
+        label 'maven'
+    }
+}
+  stages {
+    stage('Build') {
+      
+      steps {
+        echo 'Build Stage'
+        sh 'sleep 60'
+      }
+    }
+    stage('Dev') {
+     
+      steps {
+        echo 'Dev Stage'
+        sh 'sleep 60'
+      }
+    }
+    stage('Test') {
+      
+      steps {
+        echo 'Test Stage'
+        sh 'sleep 60'
+      }
+    }
+    stage('Prod') {
+      
+      steps {
+        echo 'Prod Stage'
+        sh 'sleep 60'
+      }
+    }
+  }
+}
