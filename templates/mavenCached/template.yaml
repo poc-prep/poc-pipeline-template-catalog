@@ -1,0 +1,4 @@
+version: 1
+type: pipeline-template
+name: mavenCached
+description: Maven Build with Cache option
