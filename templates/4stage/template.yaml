@@ -2,3 +2,7 @@ version: 1
 type: pipeline-template
 name: 4stage
 description: Pipeline with 4 stages
+parameters:
+  - name: repoURL
+    type: string
+    displayName: Repository URL
